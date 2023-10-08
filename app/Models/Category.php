@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Traits\Seo;
+// use App\Traits\Seo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -13,7 +13,8 @@ class Category extends Model
 {
     use HasFactory;
 
-    use Seo, SoftDeletes;
+    //use Seo, SoftDeletes;
+    use SoftDeletes;
 
     protected $guarded = [];
 

@@ -11,7 +11,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    use Seo,SoftDeletes;
+    use SoftDeletes;
     protected $guarded = [];
     public function category()
     {
